@@ -1,0 +1,104 @@
+<resources>
+    <string-array name="lang_array">
+        <item>English</item>
+        <item>中文</item>
+        <item>日本語</item>
+    </string-array>
+    <string-array name="ringDuration_array">
+        <item>Once</item>
+        <item>1 Minus</item>
+        <item>3 Minus</item>
+        <item>5 Minus</item>
+        <item>10 Minus</item>
+        <item>15 Minus</item>
+        <item>30 Minus</item>
+        <item>1 Hours</item>
+        <item>2 Hours</item>
+        <item>6 Hours</item>
+        <item>Forever</item>
+    </string-array>
+    <string name="app_name">NotifAlarm</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">NotifAlarm</string>
+    <string name="second_fragment_label">Detail</string>
+    <string name="selectapp_fragment_label">Select App\'s noti to Monitor</string>
+    <string name="subfilter_pageName">Condtion</string>
+    <string name="select_OneTimePeriod_pageName">Ban Time Period</string>
+
+    <string name="filterName">Filter Name</string>
+    <string name="vibrate">Need Vibrate</string>
+    <string name="sound">Need Sound</string>
+    <string name="ringDuration">How long to ring</string>
+
+    <string name="overriveBanTime">Override Ban Period</string>
+    <string name="specBanTime">Special Ban Period</string>
+    <string name="specSound">Sound</string>
+    <string name="Apps">Apps</string>
+    <string name="Condtion">Condition</string>
+    <string name="Keyword_Title">Title Keyword</string>
+    <string name="Keyword_Text">Text Keyword</string>
+    <string name="Keyword_Title_not">Title NOT included Keyword</string>
+    <string name="Keyword_Text_not">Text NOT included Keyword</string>
+    <string name="UseRegex">RegEx?</string>
+    <string name="Keyword_LText_Title">Title:"%s", !:"%s"</string>
+    <string name="Keyword_LText_Text">Text:"%s", !:"%s"</string>
+    <string name="Keyword_Text_Desc">The relation among All keyword in a condition are "AND", So it\'s success only if all keyword fulfilled</string>
+    <string name="Keyword_Text_Desc2">Add more condition if you need more keywords\nAs The relation among All condition are "OR"</string>
+    <string name="Keyword_Text_Desc3">Use space for separate multiple keyword appeared together</string>
+    <string name="Keyword_Tips">Leave blank if not available</string>
+
+    <string name="StartTime">Start Time</string>
+    <string name="EndTime">End Time</string>
+    <string name="Monday">Monday</string>
+    <string name="Tuesday">Tuesday</string>
+    <string name="Wednesday">Wednesday</string>
+    <string name="Thursday">Thursday</string>
+    <string name="Friday">Friday</string>
+    <string name="Saturday">Saturday</string>
+    <string name="Sunday">Sunday</string>
+
+    <string name="Setting">Setting</string>
+    <string name="Language">Language</string>
+    <string name="AllFunctionBanTime">All Functions Ban Period</string>
+    <string name="NoSoundTime">No Sound Period</string>
+    <string name="NoVibrateTime">No Vibrate Period</string>
+
+    <string name="About">About</string>
+    <string name="Detail">Thank for using my App This is an open-source App https://github.com/gamtruliar/NotifAlarm</string>
+    <string name="Author">Author: Gamtruliar</string>
+    <string name="Version" translatable="false">V1.0.0</string>
+
+    <string name="Def">Default</string>
+
+    <string name="WD1">Mon</string>
+    <string name="WD2">Tue</string>
+    <string name="WD3">Wed</string>
+    <string name="WD4">Thu</string>
+    <string name="WD5">Fri</string>
+    <string name="WD6">Sat</string>
+    <string name="WD0">Sun</string>
+
+    <string name="EnterAppName">Enter App Name</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="notiChannel">Alarm</string>
+    <string name="stop">Stop</string>
+
+    <string name="allFunction">All Function</string>
+    <string name="Sound">Sound</string>
+    <string name="Vibrate">Vibrate</string>
+
+    <string name="alarmTitle">%s detected</string>
+    <string name="alarmText">Tap to stop the alarm</string>
+
+
+    <string name="permissionText1">We need permission to monitor all notification, Please set it on for this app</string>
+    <string name="permissionText2">We need permission to vibrate and to get all installed APP in order to App selecting,Please allow it</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

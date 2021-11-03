@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectOneTimePeriodFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="2">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dip">
+
+                <ImageView
+
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+
+                    app:srcCompat="@android:drawable/arrow_up_float" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:padding="5dip"
+                    android:text="@string/StartTime"
+                    android:textAlignment="textStart" />
+
+                <TextView
+                    android:id="@+id/StartTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textAlignment="viewStart" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/EditStartTime"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_column="3"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="end"
+                    android:src="@android:drawable/ic_menu_edit"
+                    app:fabSize="auto"
+                    app:maxImageSize="24dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dip">
+
+                <ImageView
+
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+
+                    app:srcCompat="@android:drawable/arrow_down_float" />
+                <TextView
+
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:padding="5dip"
+                    android:text="@string/EndTime"
+                    android:textAlignment="textStart" />
+
+                <TextView
+                    android:id="@+id/EndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textAlignment="viewStart" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/EditEndTime"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_column="3"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="end"
+                    android:src="@android:drawable/ic_menu_edit"
+                    app:fabSize="auto"
+                    app:maxImageSize="24dp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/weekday0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/Sunday" />
+
+            <Switch
+                android:id="@+id/weekday1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/Monday" />
+
+            <Switch
+                android:id="@+id/weekday2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/Tuesday" />
+
+            <Switch
+                android:id="@+id/weekday3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/Wednesday" />
+
+            <Switch
+                android:id="@+id/weekday4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/Thursday" />
+
+            <Switch
+                android:id="@+id/weekday5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/Friday" />
+
+            <Switch
+                android:id="@+id/weekday6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/Saturday" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.gamtruliar.notialarm.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_SelectAppFragment"
+            app:destination="@id/SelectAppFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_Setting"
+            app:destination="@id/Setting" />
+        <action
+            android:id="@+id/action_FirstFragment_to_About"
+            app:destination="@id/About" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.gamtruliar.notialarm.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_SelectAppFragment"
+            app:destination="@id/SelectAppFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_SubFilter"
+            app:destination="@id/SubFilter" />
+        <action
+            android:id="@+id/action_SecondFragment_to_SelectOneTimePeriod"
+            app:destination="@id/SelectOneTimePeriod" />
+    </fragment>
+    <fragment
+        android:id="@+id/SelectAppFragment"
+        android:name="com.gamtruliar.notialarm.SelectAppPage"
+        android:label="@string/selectapp_fragment_label"
+        tools:layout="@layout/fragment_select_app">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SelectAppFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SubFilter"
+        android:name="com.gamtruliar.notialarm.SubFilterFragment"
+        android:label="@string/subfilter_pageName"
+        tools:layout="@layout/fragment_sub_filter">
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/SelectOneTimePeriod"
+        android:name="com.gamtruliar.notialarm.SelectOneTimePeriodFragment"
+        android:label="@string/select_OneTimePeriod_pageName"
+        tools:layout="@layout/fragment_select_one_time_period">
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/Setting"
+        android:name="com.gamtruliar.notialarm.SettingFragment"
+        android:label="@string/Setting"
+        tools:layout="@layout/fragment_setting">
+
+
+        <action
+            android:id="@+id/action_Setting_to_SelectOneTimePeriod"
+            app:destination="@id/SelectOneTimePeriod" />
+    </fragment>
+    <fragment
+        android:id="@+id/About"
+        android:name="com.gamtruliar.notialarm.AboutFragment"
+        android:label="@string/About"
+        tools:layout="@layout/fragment_about">
+
+
+    </fragment>
+</navigation>

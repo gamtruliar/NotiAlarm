@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ringDuration_array">
+        <item>一度</item>
+        <item>1 分</item>
+        <item>3 分</item>
+        <item>5 分</item>
+        <item>10 分</item>
+        <item>15 分</item>
+        <item>30 分</item>
+        <item>1 時間</item>
+        <item>2 時間</item>
+        <item>6 時間</item>
+        <item>永遠に</item>
+    </string-array>
+    <string name="app_name">お知ラーム(NotifAlarm)</string>
+    <string name="action_settings">設定</string>
+    <string name="action_about">アバウト</string>
+    <string name="first_fragment_label">お知ラーム(NotifAlarm)</string>
+    <string name="second_fragment_label">詳細</string>
+    <string name="selectapp_fragment_label">監視されたいのアプリの通知を選択します</string>
+    <string name="subfilter_pageName">"コンディション "</string>
+    <string name="select_OneTimePeriod_pageName">禁止期間</string>
+    <string name="filterName">フィルタ名</string>
+    <string name="vibrate">バイブレーション</string>
+    <string name="sound">サウンド</string>
+    <string name="ringDuration">鳴る時間</string>
+    <string name="overriveBanTime">上書き禁止期間</string>
+    <string name="specBanTime">禁止期間</string>
+    <string name="specSound">サウンド</string>
+    <string name="Apps">アプリ</string>
+    <string name="Condtion">"コンディション "</string>
+    <string name="Keyword_Title">タイトルキーワード</string>
+    <string name="Keyword_Text">コンテンツキーワード</string>
+    <string name="Keyword_Title_not">タイトルキーワード(含まれていない)</string>
+    <string name="Keyword_Text_not">コンテンツキーワード(含まれていない)</string>
+    <string name="UseRegex">正規表現(RegEx)?</string>
+    <string name="Keyword_LText_Title">タイトル:%s, !:%s</string>
+    <string name="Keyword_LText_Text">コンテンツ:%s, !:%s</string>
+    <string name="Keyword_Text_Desc">キーワード間の関係は「and」であり、条件はすべてのキーワードが満たされた場合にのみ確立されます</string>
+    <string name="Keyword_Text_Desc2">複数のキーワードが必要な場合は、条件間の関係が「または」であるため、さらに条件を増えて</string>
+    <string name="Keyword_Text_Desc3">スペースで、同時に表示する必要のキーワードを区切ることができます</string>
+    <string name="Keyword_Tips">利用できない場合は空白のままにします</string>
+    <string name="StartTime">開始時間</string>
+    <string name="EndTime">終了時間</string>
+    <string name="Monday">月曜日</string>
+    <string name="Tuesday">火曜日</string>
+    <string name="Wednesday">水曜日</string>
+    <string name="Thursday">木曜日</string>
+    <string name="Friday">金曜日</string>
+    <string name="Saturday">土曜日</string>
+    <string name="Sunday">日曜日</string>
+    <string name="Setting">設定</string>
+    <string name="Language">言語</string>
+    <string name="AllFunctionBanTime">全機能禁止時間</string>
+    <string name="NoSoundTime">ミュート時間</string>
+    <string name="NoVibrateTime">バイブレーションなし時間</string>
+    <string name="About">アバウト</string>
+    <string name="Detail">アプリをご利用いただきありがとうございます\nこれはオープンソースアプリです\nhttps://github.com/gamtruliar/NotifAlarm</string>
+    <string name="Author">著者：Gamtruliar</string>
+    <string name="Def">ディフォルト</string>
+    <string name="WD1">月</string>
+    <string name="WD2">火</string>
+    <string name="WD3">水</string>
+    <string name="WD4">木</string>
+    <string name="WD5">金</string>
+    <string name="WD6">土</string>
+    <string name="WD0">日</string>
+    <string name="EnterAppName">アプリ名を入力してください</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="notiChannel">Alarm</string>
+    <string name="stop">Stop</string>
+    <string name="allFunction">全機能</string>
+    <string name="Sound">サウンド</string>
+    <string name="Vibrate">バイブレーション</string>
+    <string name="alarmTitle">%s が現れています</string>
+    <string name="alarmText">クリックして停止</string>
+    <string name="permissionText1">すべての通知コンテンツを取得するため許可が必要です。このアプリをオンに設定してください</string>
+    <string name="permissionText2">振動、他のアプリの名前とアイコンを取得するには許可が必要です、許可してください</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

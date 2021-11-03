@@ -1,0 +1,98 @@
+<resources>
+    <string-array name="ringDuration_array">
+        <item>一次</item>
+        <item>1 分鐘</item>
+        <item>3 分鐘</item>
+        <item>5 分鐘</item>
+        <item>10 分鐘</item>
+        <item>15 分鐘</item>
+        <item>30 分鐘</item>
+        <item>1 小時</item>
+        <item>2 小時</item>
+        <item>6 小時</item>
+        <item>直到永遠</item>
+    </string-array>
+    <string name="app_name">通の鬧鐘(NotifAlarm)</string>
+    <string name="action_settings">設定</string>
+    <string name="action_about">關於</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">通の鬧鐘(NotifAlarm)</string>
+    <string name="second_fragment_label">詳細</string>
+    <string name="selectapp_fragment_label">請選擇要監察的APP通知</string>
+    <string name="subfilter_pageName">條件</string>
+    <string name="select_OneTimePeriod_pageName">禁止時間</string>
+
+    <string name="filterName">名稱</string>
+    <string name="vibrate">震動?</string>
+    <string name="sound">鈴聲?</string>
+    <string name="ringDuration">鬧鐘持續</string>
+
+    <string name="overriveBanTime">獨立禁止時間</string>
+    <string name="specBanTime">禁止時間</string>
+    <string name="specSound">鈴聲</string>
+    <string name="Apps">Apps</string>
+    <string name="Condtion">條件</string>
+    <string name="Keyword_Title">標題關鍵字</string>
+    <string name="Keyword_Text">內容關鍵字</string>
+    <string name="Keyword_Title_not">標題關鍵字(不包含)</string>
+    <string name="Keyword_Text_not">內容關鍵字(不包含)</string>
+    <string name="UseRegex">正則表達式(RegEx)?</string>
+    <string name="Keyword_LText_Title">標題:%s, !:%s</string>
+    <string name="Keyword_LText_Text">內容:%s, !:%s</string>
+    <string name="Keyword_Tips">留空如不適用</string>
+
+    <string name="StartTime">開始時間</string>
+    <string name="EndTime">結束時間</string>
+    <string name="Monday">星期一</string>
+    <string name="Tuesday">星期二</string>
+    <string name="Wednesday">星期三</string>
+    <string name="Thursday">星期四</string>
+    <string name="Friday">星期五</string>
+    <string name="Saturday">星期六</string>
+    <string name="Sunday">星期日</string>
+
+    <string name="Setting">設定</string>
+    <string name="Language">語言</string>
+    <string name="AllFunctionBanTime">全功能禁止時間</string>
+    <string name="NoSoundTime">靜音時間</string>
+    <string name="NoVibrateTime">冇震動時間</string>
+
+    <string name="About">關於</string>
+    <string name="Author">作者: Gamtruliar</string>
+
+    <string name="Def">預設</string>
+
+    <string name="WD1">一</string>
+    <string name="WD2">二</string>
+    <string name="WD3">三</string>
+    <string name="WD4">四</string>
+    <string name="WD5">五</string>
+    <string name="WD6">六</string>
+    <string name="WD0">日</string>
+
+    <string name="EnterAppName">輸入APP名稱</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="notiChannel">Alarm</string>
+    <string name="stop">Stop</string>
+
+    <string name="allFunction">全部功能</string>
+    <string name="Sound">鈴聲</string>
+    <string name="Vibrate">震動</string>
+
+    <string name="alarmTitle">%s 出現了</string>
+    <string name="alarmText">點擊以停止</string>
+
+
+    <string name="permissionText1">需要權限去取得所有提示內容, 請把這APP的設定為開</string>
+    <string name="permissionText2">需要權限去震動和取得其他app的名稱,Icon, 請允許</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Keyword_Text_Desc">關鍵字之間的關係是\"和\", 條件只會在所有關鍵字都被滿足時成立</string>
+    <string name="Keyword_Text_Desc2">如需要多個關鍵字, 可以開多幾個條件, 因為條件之間的關係為\"或\"</string>
+    <string name="Keyword_Text_Desc3">可以用空格把需要同時出現的關鍵字分開</string>
+    <string name="Detail">多謝使用本App\n這是一個開源的項目\nhttps://github.com/gamtruliar/NotifAlarm</string>
+</resources>
