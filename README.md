@@ -2,6 +2,9 @@
 Make alarm for any notifications with filter
 No more missing live, missing message, chances......
 
+Please feel free to build and use,
+**But Please do not publish to store without auth**
+
 Simple to use:
 ADD->Select app-> keywords -> Done!!!
 
