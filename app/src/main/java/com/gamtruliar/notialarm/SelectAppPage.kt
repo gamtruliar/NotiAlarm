@@ -55,8 +55,8 @@ class SelectAppPage  : NoMenuFragment() {
                     var nAppData=AppData()
                     nAppData.packageName=appInfo.packageName
                     nAppData.app_name=pkName2Label[appInfo.packageName]!!
-                    val icon: Drawable = pm.getApplicationIcon(appInfo.packageName)
-                    nAppData.icon=icon
+//                    val icon: Drawable = pm.getApplicationIcon(appInfo.packageName)
+//                    nAppData.icon=icon
                     data.add(nAppData)
                 }
             }

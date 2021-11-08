@@ -20,6 +20,7 @@ import com.gamtruliar.notialarm.Data.BanTimePeriod
 import com.gamtruliar.notialarm.Data.FilterData
 import com.gamtruliar.notialarm.Enums.RingDurationType
 import java.lang.Exception
+import java.net.URI
 import java.util.*
 import java.util.concurrent.Executors
 import kotlin.collections.ArrayList
@@ -85,13 +86,18 @@ class NotificationCollectorService : NotificationListenerService() {
         if(alarming.contains(notiUID))return
 
         AppCommon.sendNoti(this,getString(R.string.alarmTitle).format(filterName),getString(R.string.alarmText),Bundle(),123+notiUID,{it->
+
             it.putExtra("FilterUID",notiUID)
         })
         var nRingData=RingingData()
         uid2RingingData[notiUID]=nRingData
         var played:Boolean=false
         if(isSound && canSound()) {
-            nRingData.mediaPlayer = AppCommon.playAlermSnd(this, soundUri,durationType)
+            try {
+                nRingData.mediaPlayer = AppCommon.playAlermSnd(this, soundUri, durationType)
+            }catch ( ex: Exception){
+                Log.e("NARM",""+ex.message)
+            }
             played=true
         }
         if(isVibrate && canVibrate()){
@@ -146,9 +152,10 @@ class NotificationCollectorService : NotificationListenerService() {
     }
     fun onNotiRecv(context: Context?,intent: Intent?){
         if(intent==null)return
-//        Log.i("NARM","onNotiRecv:"+intent.getIntExtra("FilterUID",0))
+        Log.i("NARM","onNotiRecv:"+intent.getIntExtra("FilterUID",0))
 //        Toast.makeText(context,"wawaw:"+intent.getIntExtra("FilterUID",0), Toast.LENGTH_LONG).show()
         if(intent.hasExtra("FilterUID")){
+
             var rUID=intent.getIntExtra("FilterUID",0)
             alarming.remove(rUID)
             stopSoundByUID(rUID)

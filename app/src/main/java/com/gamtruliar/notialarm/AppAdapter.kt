@@ -59,7 +59,12 @@ class AppAdapter(private val dataSet: ArrayList<AppData>, val canDelete:Boolean)
             viewHolder.textView.text = data.app_name
 
         }
-        if(data.icon!=null) {
+        if(data.icon!=null){
+            viewHolder.imageView.setImageDrawable(data.icon)
+        }else{
+            var pm=viewHolder?.context?.packageManager!!
+            val icon: Drawable = pm.getApplicationIcon(data.packageName)
+            data.icon=icon
             viewHolder.imageView.setImageDrawable(data.icon)
         }
 //        AppCommon.setAppInfo(viewHolder.context,data,viewHolder.imageView,viewHolder.textView)

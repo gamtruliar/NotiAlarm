@@ -37,7 +37,8 @@
             <Switch
                 android:id="@+id/AllSwitch"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:switchMinWidth="90dp"/>
 
         </TableRow>
 
@@ -61,7 +62,8 @@
             <Switch
                 android:id="@+id/SoundSwitch"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:switchMinWidth="80dp"/>
         </TableRow>
 
         <TableRow
@@ -85,7 +87,8 @@
             <Switch
                 android:id="@+id/VibrateSwitch"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:switchMinWidth="80dp"/>
         </TableRow>
 
         <TableRow

@@ -17,7 +17,7 @@ data class FilterData (
     var banTimes: HashMap<Int,BanTimePeriod> = HashMap<Int,BanTimePeriod>(),
     var banTimesUUID:Int=0,
     var specSound:String="",
-    var needVibrate:Boolean=false,
-    var needSound:Boolean=false,
+    var needVibrate:Boolean=true,
+    var needSound:Boolean=true,
     var ringDuration:Int= RingDurationType._5_Minus.ordinal
 )

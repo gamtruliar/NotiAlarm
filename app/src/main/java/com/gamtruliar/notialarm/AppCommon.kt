@@ -292,12 +292,16 @@ class AppCommon {
                 try {
                     mediaPlayer.prepare();
                 }catch ( ex: Exception){
-                    Log.e("wa",""+ex.message)
+                    Log.e("NARM",""+ex.message)
                 }
 
 
                 handler.post(Runnable {
+                    try {
                     mediaPlayer.start();
+                    }catch ( ex: Exception){
+                        Log.e("NARM",""+ex.message)
+                    }
                 })
             })
             return mediaPlayer
@@ -379,7 +383,7 @@ class AppCommon {
 
             var intent= Intent(ACTION_NARM_NAction)
             intentMod(intent)
-            val snoozePendingIntent: PendingIntent = PendingIntent.getBroadcast(context, 0,intent ,PendingIntent.FLAG_UPDATE_CURRENT)
+            val snoozePendingIntent: PendingIntent = PendingIntent.getBroadcast(context, uid,intent ,PendingIntent.FLAG_UPDATE_CURRENT)
             var builder = NotificationCompat.Builder(context, "NARM")
                 .setSmallIcon(R.drawable.ic_stat_name)
                 .setContentTitle(title)
