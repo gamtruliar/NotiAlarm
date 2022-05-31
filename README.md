@@ -33,3 +33,6 @@ specify you alarm
 
 
 miss左saya個突發練歌回 (╯°Д°)╯ ┻━┻, 全速作左隻app出黎wwwww
+
+Store Link:
+https://play.google.com/store/apps/details?id=com.gamtruliar.notialarm
