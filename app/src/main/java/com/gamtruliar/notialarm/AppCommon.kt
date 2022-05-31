@@ -63,6 +63,7 @@ class AppCommon {
 
         var ACTION_NARM_NAction="NARM_ACTION"
         var ACTION_NARM_NAction_LANG="NARM_ACTION_LANG"
+        var ACTION_NARM_NAction_Test="NARM_ACTION_Test"
 
         var soundRegex=Regex("title=([\\w\\d\\s_]+)")
 

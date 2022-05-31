@@ -56,6 +56,16 @@ class NotificationCollectorService : NotificationListenerService() {
         ifilter= IntentFilter()
         ifilter.addAction(AppCommon.ACTION_NARM_NAction_LANG)
         registerReceiver(mRecv,ifilter)
+
+        mRecv=ActionBReceiver { c, intv ->
+            onTestRecv(c, intv)
+        }
+        m_Recv_lang=mRecv
+        ifilter= IntentFilter()
+        ifilter.addAction(AppCommon.ACTION_NARM_NAction_Test)
+        registerReceiver(mRecv,ifilter)
+
+
     }
     fun relocal(){
         Log.i("NARM","relocal")
@@ -152,13 +162,38 @@ class NotificationCollectorService : NotificationListenerService() {
     }
     fun onNotiRecv(context: Context?,intent: Intent?){
         if(intent==null)return
-        Log.i("NARM","onNotiRecv:"+intent.getIntExtra("FilterUID",0))
+        var fuid: Int=0;
+        if(intent.hasExtra("FilterUID")) {
+            fuid = intent.getIntExtra("FilterUID", 0);
+        }
+        Log.i("NARM","onNotiRecv:"+fuid)
 //        Toast.makeText(context,"wawaw:"+intent.getIntExtra("FilterUID",0), Toast.LENGTH_LONG).show()
         if(intent.hasExtra("FilterUID")){
 
-            var rUID=intent.getIntExtra("FilterUID",0)
+            var rUID=fuid
             alarming.remove(rUID)
             stopSoundByUID(rUID)
+        }
+    }
+    fun onTestRecv(context: Context?,intent: Intent?) {
+        if(intent==null)return
+        if(prefs==null){
+            var pName=getPackageName()+"_preferences";
+            //Log.i("wawa", "pName:" + pName)
+            prefs = getSharedPreferences( pName, Context.MODE_PRIVATE);
+        }
+        var fuid: Int=0;
+        if(intent.hasExtra("FilterUID")) {
+            fuid = intent.getIntExtra("FilterUID", 0);
+        }
+        Log.i("NARM","onTestRecv:"+fuid)
+        if(intent.hasExtra("FilterUID")){
+            var uri=RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
+            var filterData=AppCommon.getFilterDataByUID(prefs!!,fuid)
+            if(filterData.specSound!=""){
+                uri= Uri.parse(filterData.specSound)
+            }
+            shotRingWithNoti(filterData.filerUID,filterData.filterName,uri,filterData.needSound,filterData.needVibrate,filterData.ringDuration)
         }
     }
 

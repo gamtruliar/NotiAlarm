@@ -397,6 +397,35 @@
                             android:layout_height="wrap_content" />
                     </ScrollView>
                 </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="5dip">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                    <TextView
+
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:padding="5dip"
+                        android:text="@string/testBtn"
+                        android:textAlignment="textStart" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/testBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        app:srcCompat="@drawable/ic_stat_name" />
+                </TableRow>
 
             </TableLayout>
 

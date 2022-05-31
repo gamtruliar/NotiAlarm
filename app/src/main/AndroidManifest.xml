@@ -13,7 +13,7 @@
         android:theme="@style/Theme.NotiAlarm">
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-6868127948578890~4164466593"/>
+            android:value="ca-app-pub-5021513948514846~6710165771"/>
 
         <activity
             android:name=".MainActivity"

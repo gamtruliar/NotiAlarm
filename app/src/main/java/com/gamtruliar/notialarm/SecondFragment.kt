@@ -1,5 +1,6 @@
 package com.gamtruliar.notialarm
 
+import android.app.Activity
 import android.content.Context
 import android.content.SharedPreferences
 import android.content.pm.PackageManager
@@ -167,6 +168,7 @@ class SecondFragment : NoMenuFragment(), AdapterView.OnItemSelectedListener {
         prefs =AppCommon.getSharedPref(view.context)
         val navController =  findNavController()
         binding.fabApp.setOnClickListener { view ->
+            Toast.makeText(activity,getString(R.string.NeedTimeToSearchApp),Toast.LENGTH_SHORT).show()
             navController.navigate(R.id.action_SecondFragment_to_SelectAppFragment)
         }
         val layoutManager = LinearLayoutManager(context)
@@ -223,7 +225,18 @@ class SecondFragment : NoMenuFragment(), AdapterView.OnItemSelectedListener {
             startActivityForResult(intent, 999)
         }
         binding.spinner.onItemSelectedListener=this
+        binding.testBtn.setOnClickListener{view->
+            if(AppCommon.curFilterData!!.packageNames.count()>0) {
+                AppCommon.saveFilter(AppCommon.curFilterData!!,prefs!!)
+                var it=Intent(AppCommon.ACTION_NARM_NAction_Test)
+                it.putExtra("FilterUID",AppCommon.curFilterData!!.filerUID)
+                requireActivity().sendBroadcast(it)
+            }else{
+                Toast.makeText(activity,getString(R.string.needAddAppToTest),Toast.LENGTH_LONG).show()
+            }
 
+
+        }
 
     }
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

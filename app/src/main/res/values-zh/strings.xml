@@ -95,4 +95,7 @@
     <string name="Keyword_Text_Desc2">如需要多個關鍵字, 可以開多幾個條件, 因為條件之間的關係為\"或\"</string>
     <string name="Keyword_Text_Desc3">可以用空格把需要同時出現的關鍵字分開</string>
     <string name="Detail">多謝使用本App\n這是一個開源的項目\nhttps://github.com/gamtruliar/NotifAlarm</string>
+    <string name="testBtn">測試</string>
+    <string name="needAddAppToTest">需要最少加入一個App</string>
+    <string name="NeedTimeToSearchApp">搜索應用程序需要幾秒鐘</string>
 </resources>

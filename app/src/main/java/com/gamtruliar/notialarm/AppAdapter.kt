@@ -63,7 +63,13 @@ class AppAdapter(private val dataSet: ArrayList<AppData>, val canDelete:Boolean)
             viewHolder.imageView.setImageDrawable(data.icon)
         }else{
             var pm=viewHolder?.context?.packageManager!!
-            val icon: Drawable = pm.getApplicationIcon(data.packageName)
+            var icon: Drawable? =null
+            try {
+                 icon = pm.getApplicationIcon(data.packageName)
+            }catch (e: Exception) {
+                Log.e("NotiAlarm","getApplicationIcon:"+e+data.packageName)
+            }
+
             data.icon=icon
             viewHolder.imageView.setImageDrawable(data.icon)
         }

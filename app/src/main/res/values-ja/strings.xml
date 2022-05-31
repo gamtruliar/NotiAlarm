@@ -81,4 +81,7 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="testBtn">試みる</string>
+    <string name="needAddAppToTest">アプリを追加する必要があります</string>
+    <string name="NeedTimeToSearchApp">アプリの検索には数秒かかります</string>
 </resources>
